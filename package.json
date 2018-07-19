@@ -2,7 +2,7 @@
   "name": "openfork-recipes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://robhern135.github.io/Recipe-Search-App/",
+  "homepage": "https://robhern135.github.io/Recipe-Search-App",
   "dependencies": {
     "ajv-keywords": "^3.2.0",
     "react": "^16.4.1",
