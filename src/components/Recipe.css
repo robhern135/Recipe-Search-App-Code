@@ -1,0 +1,30 @@
+body{background:#3d5e99;}
+.navForm button{
+  background: white !important;
+  color: #3d5e99 !important;
+  border: 1px solid white;
+}
+.single-recipe-card{
+  margin: 30px auto;
+  width:90%;
+  max-width:500px;
+  display:block !important;
+}
+button{
+  margin: 10px 0;
+  color: white !important;
+}
+.home-link{
+    width:100%;
+    text-align:center;
+}
+.btn-secondary{
+    display:block;
+    background-color: #333 !important;
+    width: 80%;
+    margin: 20px auto;}
+.card-header, .card-footer{
+    background: #333;
+    color: white;
+}
+.card-header a{color: white;}

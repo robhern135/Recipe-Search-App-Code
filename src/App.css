@@ -1,0 +1,96 @@
+body{font-family: "Raleway", sans-serif;}
+a{color:white;}
+button{background-color: #3d5f99 !important;     border: 1px solid #3d5f99;}
+button, select, input{border-radius:5px;}
+form {
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: solid 2px #3d5f99;
+  letter-spacing: 2px;
+  text-align:center;
+  padding: 0.4rem;
+}
+select{
+  color: white;
+  background: #3d5e99;
+  height: 32px;
+  border-radius: 0;
+}
+
+.form-button {
+  border: 1px solid #3d5f99;
+  color: white;
+  background: transparent;
+  padding: 0.2rem 0.9rem;
+  margin: 0 0.2rem;
+  border-radius: 1px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 0.7rem;
+}
+
+input[type="text"] { 
+  height: 32px;
+  border: 1px solid #3d5f99;
+  margin: 0 5px;
+  outline: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #f3f3f3 inset;
+  -webkit-text-fill-color: #2c3e50 !important;
+}
+
+
+.App-header {
+  background-color: #333;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+.card{margin:5px; width:18rem; display:inline-block !important;}
+
+.card-content{padding:10px;}
+
+.recipe-list{text-align:center; margin:auto;}
+
+.card-title{color: #3d5f99; text-transform:uppercase; margin-top:15px; margin-bottom:0; font-size:18px;}
+
+.errorPage{}
+.errorPage h1{margin: 50px 0; text-align:center;}
+
+.card-columns{padding: 0 20px 0 10px;}
+
+.Footer{}
+.footer-bar{display:inline-block; width:100%; background: #333; color: white; padding: 15px 20px 5px 20px;}
+.footer-bar a{text-decoration:underline;}
+.float-left, .float-right{
+  width: fit-content;
+  display: inline-block;
+}
+.floatLeft{text-align:left; float:left;}
+.floatRight{text-align:right; float:right;}
+
+/*LG +*/
+@media only screen and (min-width: 1200px) {
+  .card-columns{column-count: 5;}
+}
+/*LG*/
+@media only screen and (max-width: 1200) {
+  .card-columns{column-count: 4;}
+}
+/*MD*/
+@media only screen and (max-width: 992) {
+  .card-columns{column-count: 2;}
+}
+/*SM*/
+@media only screen and (max-width: 768px) {
+  .card-columns{column-count: 1; padding: 0; }
+}
