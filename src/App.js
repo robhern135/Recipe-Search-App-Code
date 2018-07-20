@@ -24,7 +24,7 @@ class App extends Component {
       const API_RESULT = await API_CALL.json();
       this.setState({ recipes: API_RESULT.recipes });
   }
-  componentDidMount = () => {
+  componentWillMount = () => {
     const json = localStorage.getItem("recipes");
     const recipes = JSON.parse(json);
     console.log(recipes);
