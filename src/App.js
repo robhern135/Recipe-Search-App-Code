@@ -20,7 +20,7 @@ class App extends Component {
     const numberSelected = e.target.elements.numberSelected.value;
       //put this infront of "No 'Access-Control-Allow-Origin' header" errors
       //http://cors-anywhere.herokuapp.com/
-      const API_CALL = await fetch(`http://cors-anywhere.herokuapp.com/https://food2fork.com/api/search?key=${API_KEY}&q=${searchTerm}&count=${numberSelected}`);
+      const API_CALL = await fetch(`https://cors-anywhere.herokuapp.com/https://food2fork.com/api/search?key=${API_KEY}&q=${searchTerm}&count=${numberSelected}`);
       const API_RESULT = await API_CALL.json();
       this.setState({ recipes: API_RESULT.recipes });
   }
