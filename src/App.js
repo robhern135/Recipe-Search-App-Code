@@ -28,9 +28,7 @@ class App extends Component {
     const json = localStorage.getItem("recipes");
     const recipes = JSON.parse(json);
     console.log(recipes);
-    { localStorage.getItem("infiniteScrollEnabled") === null &&
     this.setState({ recipes });
-  }
   }
   
   componentDidUpdate = () => {

@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Recipes = props => (
   <div className="recipe-list">
-    { props.recipes.map((recipe) => {
+  {props.recipes &&
+     props.recipes.map((recipe) => {
       return (
         <div className="recipe-card card" key={recipe.recipe_id}>
           <img className="card-img-top" src={recipe.image_url} alt={`${recipe.title} by ${recipe.publisher}`} />
