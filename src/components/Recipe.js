@@ -16,7 +16,7 @@ class Recipe extends Component {
     const recipeTitle = this.props.location.state.recipe;
       //put this infront of "No 'Access-Control-Allow-Origin' header" errors
       //http://cors-anywhere.herokuapp.com/
-      const RECIPE_API_CALL = await fetch (`https://food2fork.com/api/search?key=${API_KEY}&q=${recipeTitle}`);
+      const RECIPE_API_CALL = await fetch (`http://cors-anywhere.herokuapp.com/https://food2fork.com/api/search?key=${API_KEY}&q=${recipeTitle}`);
       const RECIPE_API_RESULT = await RECIPE_API_CALL.json();
     this.setState({ activeRecipe: RECIPE_API_RESULT.recipes[0]});
   }
